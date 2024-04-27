@@ -1,0 +1,3 @@
+<template>
+    Simple Blog
+</template>
