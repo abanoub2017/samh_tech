@@ -24,14 +24,16 @@ const changeLang = (lang: string) => {
 // Function to check stored language preference and apply it
 const checkLang = () => {
     try {
-        let selectedLanguage = JSON.parse(localStorage.getItem('selectedLanguage')) || 'en';
-        changeLang(selectedLanguage ? selectedLanguage : 'en')
+        let selectedLanguage = JSON.parse(localStorage.getItem('selectedLanguage')) || 'ar';
+        changeLang(selectedLanguage ? selectedLanguage : 'ar')
     } catch (error) {
         console.error('Error parsing language:', error);
     }
 };
 // Calling checkLang function to set initial language
-checkLang();
+onMounted(() => {
+    checkLang();
+})
 </script>
 
 <template>
