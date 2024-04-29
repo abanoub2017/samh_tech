@@ -27,11 +27,11 @@ jobs:
       - name: Deploy to GitHub Pages # Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: main # Deploy to a branch called gh-pages you can change it for you Branch
+          branch: dev # Deploy to a branch called gh-pages you can change it for you Branch
           folder: dist
 
       - name: Cleanup # Clean Remove the dist file after deploy
         run: rm -rf dist
 
       - name: Cleanup temporary folder
-        run: rm -rf github-pages-deploy-action-temp-main-folder
+        run: rm -rf github-pages-deploy-action-temp-dev-folder
