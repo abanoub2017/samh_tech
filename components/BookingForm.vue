@@ -40,8 +40,9 @@
 
                 <el-form-item :label="$t('bookingForm.tripType') + ':'">
                     <el-radio-group v-model="form.tripType">
-                        <el-radio border value="one-way" class="mx-1">{{ $t('bookingForm.oneWay') }}</el-radio>
-                        <el-radio border value="round-trip" class="mx-1">{{ $t('bookingForm.roundTrip') }}</el-radio>
+                        <el-radio border value="one-way" class="mx-1 my-1">{{ $t('bookingForm.oneWay') }}</el-radio>
+                        <el-radio border value="round-trip" class="mx-1 my-1">{{ $t('bookingForm.roundTrip')
+                            }}</el-radio>
                     </el-radio-group>
                 </el-form-item>
             </el-col>
