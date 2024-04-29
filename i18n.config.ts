@@ -20,6 +20,7 @@ export default defineI18nConfig(() => ({
         adults: "Adults",
         children: "Children",
         submit: "Submit",
+        create: "Create",
       },
       simpleBlog: {
         title: "Blogs",
@@ -43,6 +44,7 @@ export default defineI18nConfig(() => ({
         adults: "البالغين",
         children: "الأطفال",
         submit: "إرسال",
+        create: "اضافه",
       },
       simpleBlog: {
         title: "مقالات",

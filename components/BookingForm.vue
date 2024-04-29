@@ -1,5 +1,5 @@
 <template>
-    <el-form class="booking-form w-15 m-auto p-1 border-1 shadow rounded radius-medium" :model="form" label-width="auto"
+    <el-form class="booking-form w-15 m-auto p-2  shadow rounded radius-medium" :model="form" label-width="auto"
         label-position="left">
         <!-- Booking form component -->
         <h2>{{ $t('bookingForm.title') }}</h2>
@@ -68,9 +68,8 @@
             </el-col>
             <!-- Submit and cancel buttons -->
             <el-col :span="24">
-                <el-form-item class="my-1">
-                    <el-button type="primary" @click="onSubmit">Create</el-button>
-                    <el-button class="mx-1">Cancel</el-button>
+                <el-form-item class="my-1 pt-2">
+                    <el-button type="primary" @click="onSubmit">{{ $t('bookingForm.create') }}</el-button>
                 </el-form-item>
             </el-col>
 

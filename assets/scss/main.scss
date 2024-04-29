@@ -1,3 +1,9 @@
+html,
+body,
+span {
+    font-family: "Cairo", sans-serif;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,6 +27,12 @@
     }
 }
 
+.el-form-item__label {
+    padding: 0 12px !important;
+}
+.el-radio__label {
+    padding: 0 8px !important;
+}
 .shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -60,6 +72,9 @@
     padding: 1rem !important;
 }
 
+.pt-2 {
+    padding-top: 1rem !important;
+}
 .w-15 {
     width: 50%;
     @media screen and (max-width: 768px) {
@@ -85,4 +100,10 @@
 
 .border-1 {
     border: 1px solid #ccccccb4;
+}
+
+html[dir="rtl"] {
+    .el-select__wrapper {
+        text-align: right;
+    }
 }
